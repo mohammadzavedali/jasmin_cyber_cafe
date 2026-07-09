@@ -4,37 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasmine Cyber Cafe</title>
+    <!-- আধুনিক ফন্টের জন্য Google Fonts যুক্ত করা হলো -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* ওয়েবসাইটের সাধারণ ডিজাইন */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f4f8;
             text-align: center;
         }
 
-        /* হেডার বা ওয়েবসাইটের নামের ডিজাইন */
+        /* হেডার বা ওয়েবসাইটের নামের নতুন ডিজাইন */
         header {
-            background-color: #2c3e50;
+            /* আকর্ষণীয় নীল রঙের গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: #ffffff;
-            padding: 50px 20px 30px 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 60px 20px 50px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         h1 {
             margin: 0;
-            font-size: 3em;
+            font-size: 3.5em;
+            font-weight: 700;
             letter-spacing: 2px;
-            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* লেখায় সুন্দর শ্যাডো দেওয়া হলো */
         }
 
-        /* ইংরেজি সাবটাইটেল ডিজাইন */
+        /* সাবটাইটেলের নতুন আকর্ষণীয় ডিজাইন */
+        .subtitle-container {
+            margin: 40px 20px 30px 20px;
+        }
+
         .subtitle {
-            font-size: 1.2em;
-            color: #555555;
-            margin: 30px 20px 20px 20px;
+            display: inline-block; /* ব্যাকগ্রাউন্ড শুধুমাত্র লেখার সাইজ অনুযায়ী হবে */
+            font-size: 1.5em; /* লেখা বড় করা হয়েছে */
             font-weight: 600;
+            color: #ffffff; /* চোখে পড়ার মতো সাদা রঙ */
+            background: linear-gradient(90deg, #ff9966, #ff5e62); /* রঙিন ব্যাকগ্রাউন্ড */
+            padding: 12px 30px;
+            border-radius: 50px; /* চারপাশ গোলাকার করা হয়েছে */
+            box-shadow: 0 5px 15px rgba(255, 94, 98, 0.4); /* সুন্দর আভা বা গ্লো */
+            letter-spacing: 1px;
         }
 
         /* সার্ভিস বক্সগুলোর জন্য গ্রিড সিস্টেম */
@@ -101,9 +114,9 @@
 
         /* ফুটার বা ঠিকানার অংশের ডিজাইন */
         footer {
-            background-color: #333333;
+            background-color: #222222;
             color: #dddddd;
-            padding: 30px 20px;
+            padding: 40px 20px;
             margin-top: 50px;
             line-height: 1.6;
         }
@@ -111,12 +124,13 @@
         footer h2 {
             color: #ffffff;
             margin-bottom: 5px;
+            font-size: 1.8em;
         }
         
         .footer-name {
             font-size: 1.2em;
             font-weight: bold;
-            color: #f39c12;
+            color: #ff9966;
         }
     </style>
 </head>
@@ -127,9 +141,11 @@
         <h1>Jasmine Cyber Cafe</h1>
     </header>
 
-    <!-- ইংরেজি সাবটাইটেল -->
-    <div class="subtitle">
-        Facilities available at us are...
+    <!-- ইংরেজি সাবটাইটেল (নতুন ডিজাইন) -->
+    <div class="subtitle-container">
+        <div class="subtitle">
+            Facilities available at us are...
+        </div>
     </div>
 
     <!-- সার্ভিস বক্সগুলো -->
