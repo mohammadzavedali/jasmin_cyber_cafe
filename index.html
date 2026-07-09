@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine Cyber Cafe</title>
+    <style>
+        /* ওয়েবসাইটের সাধারণ ডিজাইন */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            text-align: center;
+        }
+
+        /* হেডার বা ওয়েবসাইটের নামের ডিজাইন */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 50px 20px 30px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* ইংরেজি সাবটাইটেল ডিজাইন */
+        .subtitle {
+            font-size: 1.2em;
+            color: #555555;
+            margin: 30px 20px 20px 20px;
+            font-weight: 600;
+        }
+
+        /* সার্ভিস বক্সগুলোর জন্য গ্রিড সিস্টেম */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* প্রত্যেকটি আয়তাকার বক্সের ডিজাইন */
+        .service-box {
+            width: 220px;
+            min-height: 120px;
+            padding: 25px 15px;
+            border-radius: 12px;
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+        }
+
+        .service-box h3 {
+            margin: 0;
+            font-size: 1.4em;
+        }
+
+        .service-box p.bengali-text {
+            font-size: 0.9em;
+            margin: 10px 0 0 0;
+        }
+
+        /* Click for more information লেখার ডিজাইন */
+        .click-more {
+            font-size: 0.8em;
+            margin-top: 20px;
+            opacity: 0.9;
+            font-style: italic;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 10px;
+        }
+
+        /* বিভিন্ন বক্সের বিভিন্ন রঙ */
+        .color-1 { background: linear-gradient(135deg, #ff7e5f, #feb47b); } /* আধার */
+        .color-2 { background: linear-gradient(135deg, #2b5876, #4e4376); } /* ব্যাংকিং */
+        .color-3 { background: linear-gradient(135deg, #11998e, #38ef7d); } /* টিকিট */
+        .color-4 { background: linear-gradient(135deg, #f7971e, #ffd200); } /* সিম কার্ড */
+        .color-5 { background: linear-gradient(135deg, #8E2DE2, #4A00E0); } /* ফর্ম ফিলাপ */
+        .color-6 { background: linear-gradient(135deg, #ee0979, #ff6a00); } /* ভোটার ও রেশন */
+        .color-7 { background: linear-gradient(135deg, #3a7bd5, #3a6073); } /* জেরক্স */
+        .color-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); } /* WhatsApp */
+
+        /* ফুটার বা ঠিকানার অংশের ডিজাইন */
+        footer {
+            background-color: #333333;
+            color: #dddddd;
+            padding: 30px 20px;
+            margin-top: 50px;
+            line-height: 1.6;
+        }
+
+        footer h2 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        
+        .footer-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ওয়েবসাইটের নাম -->
+    <header>
+        <h1>Jasmine Cyber Cafe</h1>
+    </header>
+
+    <!-- ইংরেজি সাবটাইটেল -->
+    <div class="subtitle">
+        Facilities available at us are...
+    </div>
+
+    <!-- সার্ভিস বক্সগুলো -->
+    <div class="services-container">
+        
+        <div class="service-box color-1">
+            <div>
+                <h3>Aadhaar</h3>
+                <p class="bengali-text">আধার সংক্রান্ত সমস্ত কাজ ও মোবাইল লিঙ্ক</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-2">
+            <div>
+                <h3>Banking</h3>
+                <p class="bengali-text">আধার ব্যাংকিং (টাকা তোলা ও জমা)</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-3">
+            <div>
+                <h3>Tickets</h3>
+                <p class="bengali-text">ট্রেন ও প্লেনের টিকিট বুকিং</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-4">
+            <div>
+                <h3>SIM Cards</h3>
+                <p class="bengali-text">নতুন সিম এবং সিম পোর্ট করা হয়</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-5">
+            <div>
+                <h3>Job Forms</h3>
+                <p class="bengali-text">যেকোনো চাকরির ফর্ম ফিলাপ</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-6">
+            <div>
+                <h3>ID Cards</h3>
+                <p class="bengali-text">ভোটার ও রেশন কার্ডের কাজ</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-7">
+            <div>
+                <h3>Xerox & Print</h3>
+                <p class="bengali-text">কালার প্রিন্ট আউট এবং জেরক্স</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+        <div class="service-box color-whatsapp">
+            <div>
+                <h3>WhatsApp</h3>
+                <p class="bengali-text">ডকুমেন্টস পাঠাতে বা যোগাযোগ করতে</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </div>
+
+    </div>
+
+    <!-- ঠিকানা ও নাম (ফুটার) -->
+    <footer>
+        <h2>Jasmine Cyber Cafe</h2>
+        <p class="footer-name">Proprietor: Rahul</p>
+        <p><strong>Address:</strong> HAZIPUR MORE, BIRBHUM, WB 731245</p>
+    </footer>
+
+</body>
+</html>
