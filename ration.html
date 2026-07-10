@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>রেশন কার্ড সংক্রান্ত পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    /* হোমপেজের রেশন কার্ড বক্সের সাথে মানানসই লাল থিম */
+    background:linear-gradient(135deg,#ed213a,#93291e);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#ed213a;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>Ration Card Services We Provide</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>পরিবারের নতুন সদস্যের রেশন কার্ড (Form 4)</td>
+<td>বাচ্চার জন্ম সার্টিফিকেট / আধার, পরিবারের প্রধানের ডিজিটাল রেশন কার্ড ও আধার</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>রেশন কার্ড সংশোধন (নাম, বয়স, ঠিকানা) (Form 5)</td>
+<td>ভুল থাকা রেশন কার্ড, সংশোধনের প্রমাণ (আধার / ভোটার কার্ড)</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>রেশন ডিলার পরিবর্তন / শিফটিং (Form 6)</td>
+<td>বর্তমান রেশন কার্ড, আধার কার্ড, নতুন এলাকার ঠিকানার প্রমাণ</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>বিবাহ সূত্রে বা অন্য কারণে কার্ড ট্রান্সফার (Form 6/14)</td>
+<td>স্বামী/স্ত্রী বা পরিবারের প্রধানের রেশন কার্ড ও আধার, নিজের আধার ও রেশন কার্ড</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>মৃত ব্যক্তির রেশন কার্ড সারেন্ডার বা বাতিল (Form 7)</td>
+<td>ডেথ সার্টিফিকেট (Death Certificate), মৃত ব্যক্তির ডিজিটাল রেশন কার্ড</td>
+<td>₹২০–৪০</td>
+</tr>
+
+<tr>
+<td>রেশন কার্ডের ক্যাটাগরি পরিবর্তন (Form 8)</td>
+<td>বর্তমান রেশন কার্ড, আধার কার্ড, বিশেষ ক্ষেত্রে পঞ্চায়েত/পৌরসভার সার্টিফিকেট</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>হারিয়ে যাওয়া রেশন কার্ড রিপ্লেসমেন্ট বা ডুপ্লিকেট (Form 9)</td>
+<td>পুরনো কার্ডের জেরক্স বা নম্বর, আধার কার্ড, মোবাইল নম্বর</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>রেশন কার্ডের সাথে আধার ও মোবাইল নম্বর লিংক (Form 11)</td>
+<td>রেশন কার্ড, আধার কার্ড, সাথে চালু থাকা মোবাইল নম্বর</td>
+<td>₹২০–৪০</td>
+</tr>
+
+<tr>
+<td>ই-রেশন কার্ড (e-Ration Card) ডাউনলোড ও কালার প্রিন্ট</td>
+<td>রেশন কার্ডের নম্বর বা রেজিস্টার্ড মোবাইল নম্বর</td>
+<td>₹২০–৩০</td>
+</tr>
+
+<tr>
+<td>রেশন কার্ডের অ্যাপ্লিকেশন স্ট্যাটাস চেক</td>
+<td>অ্যাপ্লিকেশন বারকোড নম্বর বা রেজিস্টার্ড মোবাইল নম্বর</td>
+<td>₹১০–২০</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• রেশন কার্ডের সমস্ত কাজ পশ্চিমবঙ্গ সরকারের খাদ্য দপ্তরের (Food and Supplies Department) ওয়েবসাইটের মাধ্যমে অনলাইনে করা হয়।</p>
+<p>• অনলাইনে আবেদন করার পর সেটি অ্যাপ্রুভ (Approve) হতে সময় লাগতে পারে, যা সম্পূর্ণভাবে সরকারি দপ্তরের উপর নির্ভর করে। অ্যাপ্রুভ হওয়ার পর পোস্ট অফিসের মাধ্যমে কার্ড বাড়িতে আসে বা ই-রেশন কার্ড ডাউনলোড করা যায়।</p>
+</div>
+
+</div>
+
+</body>
+</html>

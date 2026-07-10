@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>টিকিট বুকিং পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#11998e,#38ef7d,#0288d1);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#11998e;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>Ticket Booking Services We Provide</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>সাধারণ ও স্লিপার ক্লাস ট্রেন টিকিট বুকিং (General / Sleeper)</td>
+<td>যাত্রীর নাম, বয়স, লিঙ্গ, সঠিক মোবাইল নম্বর, যেকোনো একটি পরিচয়পত্র (আধার/ভোটার)</td>
+<td>₹৩০–৫০ (প্রতি টিকিট)</td>
+</tr>
+
+<tr>
+<td>এসি ক্লাস ট্রেন টিকিট বুকিং (AC 3 Tier / 2 Tier / Chair Car)</td>
+<td>যাত্রীর নাম, বয়স, লিঙ্গ, সঠিক মোবাইল নম্বর, পরিচয়পত্র (আধার/ভোটার)</td>
+<td>₹৫০–১০০ (প্রতি টিকিট)</td>
+</tr>
+
+<tr>
+<td>তৎকাল ট্রেন টিকিট বুকিং (Tatkal Ticket)</td>
+<td>যাত্রীদের সমস্ত বিবরণ (আগে থেকে দেওয়া আবশ্যক), পরিচয়পত্র এবং ক্যাফেতে নির্দিষ্ট সময়ের আগে উপস্থিতি</td>
+<td>₹১০০–২০০ (প্রতি টিকিট)</td>
+</tr>
+
+<tr>
+<td>ঘরোয়া বিমান টিকিট বুকিং (Domestic Flight Ticket)</td>
+<td>যাত্রীর নাম (সরকারি পরিচয়পত্র অনুযায়ী বানান), আধার কার্ড / ভোটার কার্ড, মোবাইল নম্বর, ইমেইল আইডি</td>
+<td>₹১০০–৩০০ (প্রতি প্যাসেঞ্জার)</td>
+</tr>
+
+<tr>
+<td>আন্তর্জাতিক বিমান টিকিট বুকিং (International Flight Ticket)</td>
+<td>আসল পাসপোর্ট (Original Passport), ভিসা বিবরণ (যদি প্রযোজ্য হয়), সম্পূর্ণ ব্যক্তিগত তথ্য, ইমেইল ও মোবাইল নম্বর</td>
+<td>₹৩০০–৮০০ (প্রতি প্যাসেঞ্জার)</td>
+</tr>
+
+<tr>
+<td>টিকিট বাতিল ও রিফান্ড প্রসেস (Ticket Cancellation)</td>
+<td>মূল টিকিট / PNR নম্বর, বুকিংয়ের সময় দেওয়া মোবাইল নম্বরে আসা OTP</td>
+<td>₹২০–৫০</td>
+</tr>
+
+<tr>
+<td>ট্রেন PNR স্ট্যাটাস চেক ও প্রিন্ট</td>
+<td>১০ সংখ্যার PNR নম্বর</td>
+<td>₹১০–২০</td>
+</tr>
+
+<tr>
+<td>ফ্লাইট ওয়েব চেক-ইন (Flight Web Check-in & Boarding Pass)</td>
+<td>PNR / বুকিং রেফারেন্স নম্বর, যাত্রীর পদবি (Last Name), সিট চয়েস (যদি থাকে)</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>দূরপাল্লার বাস টিকিট বুকিং (Bus Ticket Booking)</td>
+<td>যাত্রীর নাম, বয়স, মোবাইল নম্বর, গন্তব্যের নাম</td>
+<td>₹২০–৫০</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• তৎকাল টিকিটের ক্ষেত্রে সিট পাওয়ার গ্যারান্টি সম্পূর্ণভাবে রেলওয়ের সার্ভারের উপলব্ধতার উপর নির্ভর করে।</p>
+<p>• বিমান বা ট্রেনের টিকিট বাতিলের (Cancel) পর রিফান্ডের টাকা সরকারি নিয়ম অনুযায়ী নির্দিষ্ট সময়ের মধ্যে আপনার বুকিং অ্যাকাউন্টে বা ক্যাফে মারফত ফেরত দেওয়া হবে।</p>
+</div>
+
+</div>
+
+</body>
+</html>

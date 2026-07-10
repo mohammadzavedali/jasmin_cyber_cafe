@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ভোটার কার্ড সংক্রান্ত পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    /* হোমপেজের ভোটার কার্ড বক্সের সাথে মানানসই নীল থিম */
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#0072ff;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>Voter Card Services We Provide</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>নতুন ভোটার কার্ডের আবেদন (Form 6)</td>
+<td>পাসপোর্ট সাইজ ছবি, জন্ম ও ঠিকানার প্রমাণপত্র (আধার), পরিবারের একজনের ভোটার কার্ড</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>ভোটার কার্ড সংশোধন (নাম, বয়স, ঠিকানা) (Form 8)</td>
+<td>আধার কার্ড / জন্ম সার্টিফিকেট / মাধ্যমিকের অ্যাডমিট বা মার্কশিট (সঠিক প্রমাণের ডকুমেন্ট)</td>
+<td>₹৫০–১00</td>
+</tr>
+
+<tr>
+<td>ভোটার কার্ড ট্রান্সফার বা স্থানান্তর (Form 8)</td>
+<td>নতুন ঠিকানার প্রমাণ (আধার), পুরনো ভোটার কার্ড</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>হারিয়ে যাওয়া ভোটার কার্ড রিপ্লেসমেন্ট (Replacement)</td>
+<td>পুরনো ভোটার কার্ডের নম্বর (EPIC No.) বা জেরক্স কপি, আধার কার্ড</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>ভোটার কার্ডের সাথে আধার কার্ড লিংক (Form 6B)</td>
+<td>ভোটার কার্ড, আধার কার্ড, মোবাইল নম্বর</td>
+<td>₹২০–৫০</td>
+</tr>
+
+<tr>
+<td>ই-এপিক (e-EPIC) ডাউনলোড ও প্রিন্ট (কালার)</td>
+<td>ভোটার কার্ডের নম্বর, রেজিস্টার্ড মোবাইল নম্বর (OTP এর জন্য)</td>
+<td>₹৩০–৫০</td>
+</tr>
+
+<tr>
+<td>PVC (প্লাস্টিক) ভোটার কার্ড প্রিন্ট</td>
+<td>ভোটার কার্ডের PDF বা EPIC নম্বর</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>ভোটার লিস্টে নাম চেক করা বা লিস্ট প্রিন্ট আউট</td>
+<td>ভোটারের নাম বা EPIC নম্বর, বিধানসভার নাম</td>
+<td>₹১০–২০</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• নতুন ভোটার কার্ড আসতে বা অনলাইনে সংশোধন হতে সাধারণত ১ থেকে ৩ মাস বা তার বেশি সময় লাগতে পারে, যা সম্পূর্ণভাবে নির্বাচন কমিশন (Election Commission of India) এর অনুমোদনের উপর নির্ভর করে।</p>
+<p>• অনলাইনে আবেদন করার পর অনেক ক্ষেত্রে BLO (Booth Level Officer) আপনার দেওয়া নথিপত্র ভেরিফিকেশনের জন্য আপনার সাথে যোগাযোগ করতে পারেন।</p>
+</div>
+
+</div>
+
+</body>
+</html>

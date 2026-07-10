@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>জেরক্স ও প্রিন্টিং পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    /* জেরক্স বক্সের সাথে মানানসই নীলচে-ধূসর (Blue-Grey) থিম */
+    background:linear-gradient(135deg,#3a7bd5,#3a6073);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#3a7bd5;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>Xerox, Print & Other Services</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় মাধ্যম / নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>সাদাকালো জেরক্স (Black & White Xerox)</td>
+<td>আসল ডকুমেন্টের হার্ড কপি</td>
+<td>₹২–৩ (প্রতি পেজ)</td>
+</tr>
+
+<tr>
+<td>কালার জেরক্স (Color Xerox)</td>
+<td>আসল ডকুমেন্টের হার্ড কপি</td>
+<td>₹৫–১০ (প্রতি পেজ)</td>
+</tr>
+
+<tr>
+<td>সাদাকালো প্রিন্ট (B&W Print Out)</td>
+<td>WhatsApp, Email বা Pen Drive-এর মাধ্যমে দেওয়া PDF/ছবি</td>
+<td>₹৩–৫ (প্রতি পেজ)</td>
+</tr>
+
+<tr>
+<td>কালার প্রিন্ট আউট (Color Print Out)</td>
+<td>WhatsApp, Email বা Pen Drive-এর মাধ্যমে দেওয়া PDF/ছবি</td>
+<td>₹১০–১৫ (প্রতি পেজ)</td>
+</tr>
+
+<tr>
+<td>পাসপোর্ট সাইজ ছবি (Passport Size Photo)</td>
+<td>সরাসরি ছবি তোলা অথবা WhatsApp-এ পরিষ্কার ছবি পাঠানো</td>
+<td>₹৩০–৪০ (৪ কপি) / ₹৫০ (৮ কপি)</td>
+</tr>
+
+<tr>
+<td>ল্যামিনেশন - A4 সাইজ (Lamination A4)</td>
+<td>সার্টিফিকেট, মার্কশিট বা যেকোনো A4 সাইজের ডকুমেন্ট</td>
+<td>₹১৫–২০ (প্রতিটি)</td>
+</tr>
+
+<tr>
+<td>ল্যামিনেশন - আইডি কার্ড (ID Card Lamination)</td>
+<td>আধার, প্যান বা ভোটার কার্ডের সাইজ</td>
+<td>₹১০ (প্রতিটি)</td>
+</tr>
+
+<tr>
+<td>ডকুমেন্ট স্ক্যানিং (Document Scan)</td>
+<td>আসল ডকুমেন্টের হার্ড কপি</td>
+<td>₹৫–১০ (প্রতি পেজ)</td>
+</tr>
+
+<tr>
+<td>স্পাইরাল বাইন্ডিং (Spiral Binding)</td>
+<td>প্রিন্ট করা প্রজেক্ট বা বইয়ের পাতা</td>
+<td>₹৩০–৫০ (পাতার সংখ্যার উপর ভিত্তি করে)</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• WhatsApp বা Email-এ পাঠানো ছবি বা PDF-এর কোয়ালিটি ভালো না হলে প্রিন্ট আউটের কোয়ালিটি খারাপ হতে পারে। ভালো প্রিন্টের জন্য ডকুমেন্ট সবসময় PDF ফরম্যাটে পাঠানো উচিত।</p>
+<p>• অনেকগুলো পেজ একসঙ্গে জেরক্স বা প্রিন্ট করলে দামের উপর বিশেষ ছাড় (Discount) পাওয়া যেতে পারে।</p>
+</div>
+
+</div>
+
+</body>
+</html>

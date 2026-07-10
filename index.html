@@ -18,7 +18,6 @@
 
         /* হেডার বা ওয়েবসাইটের নামের নতুন ডিজাইন */
         header {
-            /* আকর্ষণীয় নীল রঙের গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: #ffffff;
             padding: 60px 20px 50px 20px;
@@ -30,7 +29,7 @@
             font-size: 3.5em;
             font-weight: 700;
             letter-spacing: 2px;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* লেখায় সুন্দর শ্যাডো দেওয়া হলো */
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
         }
 
         /* সাবটাইটেলের নতুন আকর্ষণীয় ডিজাইন */
@@ -39,14 +38,15 @@
         }
 
         .subtitle {
-            display: inline-block; /* ব্যাকগ্রাউন্ড শুধুমাত্র লেখার সাইজ অনুযায়ী হবে */
-            font-size: 1.5em; /* লেখা বড় করা হয়েছে */
+            display: inline-block;
+            font-size: 1.5em;
             font-weight: 600;
-            color: #ffffff; /* চোখে পড়ার মতো সাদা রঙ */
-            background: linear-gradient(90deg, #ff9966, #ff5e62); /* রঙিন ব্যাকগ্রাউন্ড */
+            color: #ffffff;
+            /* নতুন গোলাপী-বেগুনি (Pink-Purple) ব্যাকগ্রাউন্ড দেওয়া হলো যাতে আধার/সিমের সাথে না মেলে */
+            background: linear-gradient(90deg, #e91e63, #9c27b0);
             padding: 12px 30px;
-            border-radius: 50px; /* চারপাশ গোলাকার করা হয়েছে */
-            box-shadow: 0 5px 15px rgba(255, 94, 98, 0.4); /* সুন্দর আভা বা গ্লো */
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
             letter-spacing: 1px;
         }
 
@@ -105,12 +105,20 @@
         /* বিভিন্ন বক্সের বিভিন্ন রঙ */
         .color-1 { background: linear-gradient(135deg, #ff7e5f, #feb47b); } /* আধার */
         .color-2 { background: linear-gradient(135deg, #2b5876, #4e4376); } /* ব্যাংকিং */
+        .color-voter { background: linear-gradient(135deg, #00c6ff, #0072ff); } /* ভোটার কার্ড (নতুন নীল রঙ) */
+        .color-ration { background: linear-gradient(135deg, #ed213a, #93291e); } /* রেশন কার্ড (নতুন লাল রঙ) */
+        
+        /* নতুন ৩টি বক্সের কালার (কেন্দ্র, রাজ্য, স্কলারশিপ) */
+        .color-central { background: linear-gradient(135deg, #FF512F, #DD2476); } /* কেন্দ্র সরকার */
+        .color-state { background: linear-gradient(135deg, #1D976C, #93F9B9); color: #333; } /* রাজ্য সরকার */
+        .color-scholarship { background: linear-gradient(135deg, #4b6cb7, #182848); } /* স্কলারশিপ */
+
         .color-3 { background: linear-gradient(135deg, #11998e, #38ef7d); } /* টিকিট */
         .color-4 { background: linear-gradient(135deg, #f7971e, #ffd200); } /* সিম কার্ড */
         .color-5 { background: linear-gradient(135deg, #8E2DE2, #4A00E0); } /* ফর্ম ফিলাপ */
-        .color-6 { background: linear-gradient(135deg, #ee0979, #ff6a00); } /* ভোটার ও রেশন */
         .color-7 { background: linear-gradient(135deg, #3a7bd5, #3a6073); } /* জেরক্স */
         .color-whatsapp { background: linear-gradient(135deg, #25D366, #128C7E); } /* WhatsApp */
+        .color-location { background: linear-gradient(135deg, #ea4335, #b31404); } /* Location (Google Maps red) */
 
         /* ফুটার বা ঠিকানার অংশের ডিজাইন */
         footer {
@@ -141,79 +149,132 @@
         <h1>Jasmine Cyber Cafe</h1>
     </header>
 
-    <!-- ইংরেজি সাবটাইটেল (নতুন ডিজাইন) -->
+    <!-- ইংরেজি সাবটাইটেল -->
     <div class="subtitle-container">
         <div class="subtitle">
             Facilities available at us are...
         </div>
     </div>
 
-    <!-- সার্ভিস বক্সগুলো -->
+    <!-- সার্ভিস বক্সগুলো (আপনার দেওয়া নতুন সিরিয়াল অনুযায়ী সাজানো) -->
     <div class="services-container">
         
-        <div class="service-box color-1">
+        <!-- ১. আধার -->
+        <a href="aadhaar.html" class="service-box color-1">
             <div>
                 <h3>Aadhaar</h3>
                 <p class="bengali-text">আধার সংক্রান্ত সমস্ত কাজ ও মোবাইল লিঙ্ক</p>
             </div>
             <div class="click-more">Click for more information</div>
-        </div>
+        </a>
 
-        <div class="service-box color-2">
+        <!-- ২. ব্যাংকিং -->
+        <a href="banking.html" class="service-box color-2">
             <div>
                 <h3>Banking</h3>
                 <p class="bengali-text">আধার ব্যাংকিং (টাকা তোলা ও জমা)</p>
             </div>
             <div class="click-more">Click for more information</div>
-        </div>
+        </a>
 
-        <div class="service-box color-3">
+        <!-- ৩. ভোটার কার্ড -->
+        <a href="voter.html" class="service-box color-voter">
+            <div>
+                <h3>Voter Card</h3>
+                <p class="bengali-text">নতুন ভোটার কার্ড আবেদন ও সংশোধন</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </a>
+
+        <!-- ৪. রেশন কার্ড -->
+        <a href="ration.html" class="service-box color-ration">
+            <div>
+                <h3>Ration Card</h3>
+                <p class="bengali-text">নতুন রেশন কার্ড ও আধার লিংক</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </a>
+
+        <!-- ৫. কেন্দ্র সরকারের চাকরি (নতুন) -->
+        <a href="jobforms.html" class="service-box color-central">
+            <div>
+                <h3>Central Govt. Jobs</h3>
+                <p class="bengali-text">SSC, Railway, Post Office ইত্যাদি ফর্ম ফিলাপ</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </a>
+
+        <!-- ৬. রাজ্য সরকারের চাকরি (নতুন) -->
+        <a href="jobforms.html" class="service-box color-state">
+            <div>
+                <h3>State Govt. Jobs</h3>
+                <p class="bengali-text">WBPSC, Police, TET ইত্যাদি ফর্ম ফিলাপ</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </a>
+
+        <!-- ৭. স্কলারশিপ (নতুন) -->
+        <a href="jobforms.html" class="service-box color-scholarship">
+            <div>
+                <h3>Scholarships</h3>
+                <p class="bengali-text">Oasis, SVMCM, Aikyashree ইত্যাদি আবেদন</p>
+            </div>
+            <div class="click-more">Click for more information</div>
+        </a>
+
+        <!-- ৮. টিকিট -->
+        <a href="tickets.html" class="service-box color-3">
             <div>
                 <h3>Tickets</h3>
                 <p class="bengali-text">ট্রেন ও প্লেনের টিকিট বুকিং</p>
             </div>
             <div class="click-more">Click for more information</div>
-        </div>
+        </a>
 
-        <div class="service-box color-4">
+        <!-- ৯. সিম কার্ড -->
+        <a href="simcards.html" class="service-box color-4">
             <div>
                 <h3>SIM Cards</h3>
                 <p class="bengali-text">নতুন সিম এবং সিম পোর্ট করা হয়</p>
             </div>
             <div class="click-more">Click for more information</div>
-        </div>
+        </a>
 
-        <div class="service-box color-5">
+        <!-- ১০. জব ফর্ম -->
+        <a href="jobforms.html" class="service-box color-5">
             <div>
                 <h3>Job Forms</h3>
                 <p class="bengali-text">যেকোনো চাকরির ফর্ম ফিলাপ</p>
             </div>
             <div class="click-more">Click for more information</div>
-        </div>
+        </a>
 
-        <div class="service-box color-6">
-            <div>
-                <h3>ID Cards</h3>
-                <p class="bengali-text">ভোটার ও রেশন কার্ডের কাজ</p>
-            </div>
-            <div class="click-more">Click for more information</div>
-        </div>
-
-        <div class="service-box color-7">
+        <!-- ১১. জেরক্স ও প্রিন্ট -->
+        <a href="xerox.html" class="service-box color-7">
             <div>
                 <h3>Xerox & Print</h3>
                 <p class="bengali-text">কালার প্রিন্ট আউট এবং জেরক্স</p>
             </div>
             <div class="click-more">Click for more information</div>
-        </div>
+        </a>
 
-        <div class="service-box color-whatsapp">
+        <!-- ১২. WhatsApp -->
+        <a href="https://wa.me/919749536364" target="_blank" class="service-box color-whatsapp">
             <div>
                 <h3>WhatsApp</h3>
                 <p class="bengali-text">ডকুমেন্টস পাঠাতে বা যোগাযোগ করতে</p>
             </div>
-            <div class="click-more">Click for more information</div>
-        </div>
+            <div class="click-more">Click to Message</div>
+        </a>
+
+        <!-- ১৩. Location (নতুন) -->
+        <a href="https://www.google.com/maps/search/?api=1&query=HAZIPUR+MORE,+BIRBHUM,+WB+731245" target="_blank" class="service-box color-location">
+            <div>
+                <h3>Location</h3>
+                <p class="bengali-text">আমাদের সেন্টারে আসার জন্য ম্যাপ দেখুন</p>
+            </div>
+            <div class="click-more">Open in Google Maps</div>
+        </a>
 
     </div>
 

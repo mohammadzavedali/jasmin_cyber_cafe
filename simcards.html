@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>সিম কার্ড সংক্রান্ত পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    /* সিম কার্ড বক্সের সাথে মানানসই অরেঞ্জ/ইয়েলো থিম */
+    background:linear-gradient(135deg,#e65c00,#F9D423);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#e65c00;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>SIM Card Services We Provide</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>নতুন সিম কার্ড (Jio, Airtel, Vi, BSNL)</td>
+<td>আসল আধার কার্ড / ভোটার কার্ড, অন্য একটি চালু মোবাইল নম্বর</td>
+<td>₹২০০–৩৫০ (প্ল্যান অনুযায়ী)</td>
+</tr>
+
+<tr>
+<td>সিম পোর্ট (MNP) অন্য কোম্পানিতে যাওয়ার জন্য</td>
+<td>আসল আধার কার্ড, পোর্ট করার জন্য বর্তমান সিম চালু থাকতে হবে</td>
+<td>₹০–৫০ (অফার অনুযায়ী)</td>
+</tr>
+
+<tr>
+<td>হারিয়ে যাওয়া বা নষ্ট হওয়া সিম রিপ্লেসমেন্ট</td>
+<td>যাঁর নামে সিম ছিল তাঁর আসল আধার কার্ড</td>
+<td>₹৫০–১৫০</td>
+</tr>
+
+<tr>
+<td>ফ্যান্সি / ভিআইপি মোবাইল নম্বর (VIP Number)</td>
+<td>আসল আধার কার্ড, অন্য মোবাইল নম্বর</td>
+<td>₹৫০০ থেকে শুরু (নম্বর অনুযায়ী)</td>
+</tr>
+
+<tr>
+<td>যেকোনো কোম্পানির মোবাইল রিচার্জ (Recharge)</td>
+<td>সঠিক মোবাইল নম্বর</td>
+<td>প্ল্যানের আসল দাম</td>
+</tr>
+
+<tr>
+<td>পোস্টপেইড (Postpaid) বিল পেমেন্ট</td>
+<td>মোবাইল নম্বর ও বিলের বিবরণ</td>
+<td>বিলের আসল দাম + ₹১০-২০</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• সিম কার্ড নেওয়ার জন্য বা রিপ্লেসমেন্ট করার জন্য যার নামে পরিচয়পত্র দেওয়া হবে, তাকে নিজে উপস্থিত থাকতে হবে (লাইভ ছবি তোলার জন্য)।</p>
+<p>• সিম পোর্ট করার পর নতুন কোম্পানিতে সিম চালু হতে সাধারণত ৩ থেকে ৫ দিন সময় লাগতে পারে।</p>
+<p>• টেলিকম কোম্পানিগুলির নিয়ম অনুযায়ী প্ল্যানের দাম এবং অফার যেকোনো সময় পরিবর্তন হতে পারে।</p>
+</div>
+
+</div>
+
+</body>
+</html>

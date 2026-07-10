@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>চাকরির ফর্ম ফিলাপ পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    /* হোমপেজের জব ফর্ম বক্সের সাথে মানানসই বেগুনি (Purple) থিম */
+    background:linear-gradient(135deg,#8E2DE2,#4A00E0);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#8E2DE2;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>Job Form Fill-up Services We Provide</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় মাধ্যম / নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>কেন্দ্রীয় সরকারের চাকরি (SSC, Railway, Post Office ইত্যাদি)</td>
+<td>পাসপোর্ট ছবি, সই (Signature), মার্কশিট, আধার, কাস্ট সার্টিফিকেট (যদি থাকে)</td>
+<td>₹৫০–১০০ (পরীক্ষার ফি আলাদা)</td>
+</tr>
+
+<tr>
+<td>রাজ্য সরকারের চাকরি (WBPSC, Police, Primary TET ইত্যাদি)</td>
+<td>পাসপোর্ট ছবি, সই, সমস্ত শিক্ষাগত যোগ্যতার প্রমাণ, আধার কার্ড</td>
+<td>₹৫০–১০০ (পরীক্ষার ফি আলাদা)</td>
+</tr>
+
+<tr>
+<td>ডিফেন্স / পুলিশ লাইন (Army, Navy, CRPF, WBP)</td>
+<td>ছবি, সই, মার্কশিট, ব্লাড গ্রুপ, উচ্চতা ও ওজনের তথ্য</td>
+<td>₹৫০–১০০ (পরীক্ষার ফি আলাদা)</td>
+</tr>
+
+<tr>
+<td>বায়োডাটা বা সিভি তৈরি (Biodata / CV / Resume)</td>
+<td>নিজের সম্পূর্ণ বায়োডাটা, শিক্ষাগত যোগ্যতা, কাজের অভিজ্ঞতা (যদি থাকে)</td>
+<td>₹৩০–৫০ (প্রিন্ট আউট সহ)</td>
+</tr>
+
+<tr>
+<td>স্কলারশিপের আবেদন (Oasis, SVMCM, Aikyashree ইত্যাদি)</td>
+<td>মার্কশিট, আয়ের শংসাপত্র (Income Certificate), ব্যাংক পাসবই, আধার</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>কলেজ বা বিশ্ববিদ্যালয়ে ভর্তির ফর্ম ফিলাপ</td>
+<td>মাধ্যমিক ও উচ্চ মাধ্যমিকের মার্কশিট, ছবি, সই, কাস্ট সার্টিফিকেট</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>অ্যাডমিট কার্ড (Admit Card) ডাউনলোড ও প্রিন্ট</td>
+<td>অ্যাপ্লিকেশন নম্বর, জন্মতারিখ বা পাসওয়ার্ড</td>
+<td>₹১০–২০</td>
+</tr>
+
+<tr>
+<td>পরীক্ষার রেজাল্ট (Result) দেখা ও প্রিন্ট</td>
+<td>রোল নম্বর, রেজিস্ট্রেশন নম্বর, জন্মতারিখ</td>
+<td>₹১০–২০</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• সরকারি বা বেসরকারি চাকরির ফর্ম ফিলাপের ক্ষেত্রে পরীক্ষার ফি (Exam Fee) কাস্টমারকে নিজে বহন করতে হবে। ক্যাফের চার্জ শুধুমাত্র ফর্ম ফিলাপ করার পারিশ্রমিক।</p>
+<p>• ফর্ম ফিলাপ করার সময় কাস্টমারকে স্ক্রিনে নিজের সমস্ত তথ্য (নামের বানান, জন্মতারিখ ইত্যাদি) ভালোভাবে মিলিয়ে নিতে হবে। ফর্ম সাবমিট হয়ে যাওয়ার পর কোনো ভুল থাকলে ক্যাফে কর্তৃপক্ষ দায়ী থাকবে না।</p>
+</div>
+
+</div>
+
+</body>
+</html>

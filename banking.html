@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ব্যাংকিং রিলেটেড পরিষেবা - Jasmine Cyber Cafe</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Back Button Design */
+.back-btn {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff5e62;
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#0d47a1,#1976d2,#00bcd4);
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+
+table,
+th,
+td{
+    border:3px solid #222;
+}
+
+th{
+    background:#0d47a1;
+    color:#fff;
+    padding:12px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    font-size:17px;
+    text-align:left;
+    vertical-align:top;
+}
+
+tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* Disclaimer */
+.disclaimer{
+    margin-top:18px;
+    font-size:12px;
+    color:#444;
+    line-height:1.6;
+}
+
+.disclaimer p{
+    margin:4px 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<!-- ফিরে যাওয়ার বাটন -->
+<a href="index.html" class="back-btn">← ফিরে যান (Back to Home)</a>
+
+<div class="header">
+<h1>Banking Related Services We Provide</h1>
+</div>
+
+<table>
+
+<tr>
+<th>নাম</th>
+<th>প্রয়োজনীয় নথিপত্র</th>
+<th>সার্ভিস চার্জ (আনুমানিক)</th>
+</tr>
+
+<tr>
+<td>নতুন ব্যাংক অ্যাকাউন্ট খোলা (Savings / Current / Jan Dhan)</td>
+<td>আধার কার্ড, প্যান কার্ড, মোবাইল নম্বর, পাসপোর্ট সাইজ ছবি</td>
+<td>₹৫০–১০০</td>
+</tr>
+
+<tr>
+<td>আধার কার্ডের মাধ্যমে টাকা তোলা (AEPS)</td>
+<td>আধার নম্বর, ব্যাংকের নাম, আঙুলের ছাপ</td>
+<td>₹১০–৩০</td>
+</tr>
+
+<tr>
+<td>টাকা জমা করা (Cash Deposit)</td>
+<td>ব্যাংক অ্যাকাউন্ট নম্বর / আধার নম্বর, নগদ টাকা</td>
+<td>₹১০–৩০</td>
+</tr>
+
+<tr>
+<td>যেকোনো ব্যাংকে টাকা পাঠানো (Money Transfer - DMT)</td>
+<td>গ্রাহকের অ্যাকাউন্ট নম্বর, IFSC কোড, মোবাইল নম্বর</td>
+<td>₹২০–৫০</td>
+</tr>
+
+<tr>
+<td>Mini ATM-এর মাধ্যমে টাকা তোলা</td>
+<td>ATM / ডেবিট কার্ড, পিন নম্বর</td>
+<td>₹১০–৩০</td>
+</tr>
+
+<tr>
+<td>ব্যালেন্স চেক (Balance Enquiry)</td>
+<td>আধার নম্বর / ডেবিট কার্ড, আঙুলের ছাপ</td>
+<td>₹৫–২০</td>
+</tr>
+
+<tr>
+<td>মিনি স্টেটমেন্ট (Mini Statement)</td>
+<td>আধার নম্বর / ডেবিট কার্ড, আঙুলের ছাপ</td>
+<td>₹১০–২০</td>
+</tr>
+
+<tr>
+<td>লোন বা ক্রেডিট কার্ডের EMI জমা করা</td>
+<td>লোন অ্যাকাউন্ট নম্বর / লোন আইডি, মোবাইল নম্বর</td>
+<td>₹২০–৫০</td>
+</tr>
+
+<tr>
+<td>অটল পেনশন যোজনা (APY) নিবন্ধন</td>
+<td>আধার কার্ড, ব্যাংক পাসবই, মোবাইল নম্বর</td>
+<td>₹৩০–১০০</td>
+</tr>
+
+<tr>
+<td>প্রধানমন্ত্রী জীবন জ্যোতি / সুরক্ষা বীমা যোজনা</td>
+<td>আধার কার্ড, ব্যাংক পাসবই, মোবাইল নম্বর</td>
+<td>₹২০–৫০</td>
+</tr>
+
+<tr>
+<td>গাড়ির ফাস্ট্যাগ (FASTag) রিচার্জ ও তৈরি</td>
+<td>গাড়ির রেজিস্ট্রেশন সার্টিফিকেট (RC Book), আধার কার্ড</td>
+<td>₹২০–৫০</td>
+</tr>
+
+<tr>
+<td>ব্যাংক অ্যাকাউন্টের সাথে আধার লিঙ্ক / e-KYC</td>
+<td>আধার কার্ড, ব্যাংক পাসবই</td>
+<td>₹২০–৫০</td>
+</tr>
+
+</table>
+
+<div class="disclaimer">
+<p>• নগদ টাকা তোলা বা জমার ক্ষেত্রে সার্ভিস চার্জ ট্রানজ্যাকশন বা লেনদেনের পরিমাণের উপর ভিত্তি করে কিছুটা পরিবর্তিত হতে পারে।</p>
+<p>• সরকারি নিয়ম ও ব্যাংকের গাইডলাইন অনুযায়ী সমস্ত নথিপত্র আসল (Original) হওয়া আবশ্যক।</p>
+</div>
+
+</div>
+
+</body>
+</html>
